@@ -1,8 +1,18 @@
+import './App.scss'
 
 function App() {
     return (
         <div className="App">
-            <h1>hello cac ban tre</h1>
+            <div className="home">
+                <div className="sidebar"></div>
+                <div className='wapper'>
+                    <div className="topbar"></div>
+                    <div className='content'>
+                        <div className="main"></div>
+                        <div className="rightbar"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
