@@ -60,16 +60,22 @@ html {
                     padding: 12px 24px;
                     border-radius: 8px;
                     color: #1D4ED8;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                    transition: scale .5s linear;
+                    background-color: #F0F2F5;
 
                     &.active {
                         background: linear-gradient(90deg, #0055FF 2.73%, #0099FF 95.51%);
                         color: white;
                     }
 
-                    &:hover {
+                    &:not(&.active):hover {
                         background: linear-gradient(90deg, #0055FF 2.73%, #0099FF 95.51%);
                         color: white;
                         overflow: hidden;
+                        scale: 0.95;
+                        opacity: 0.8;
                     }
 
                     .box-item-nav {

@@ -12,15 +12,15 @@ const menuItems = [
         label: 'Tài liệu học tập'
     },
     {
-        icon: <Icons.ManagerAplus />,
+        icon: <Icons.ManagerAplus size={24} />,
         label: 'Quản lý A+'
     },
     {
-        icon: <Icons.Exam />,
+        icon: <Icons.Exam size={24} />,
         label: 'Thi tự do'
     },
     {
-        icon: <Icons.Confessiton />,
+        icon: <Icons.Confessiton size={24} />,
         label: 'Confession'
     }
 ]
@@ -46,10 +46,10 @@ function App() {
                         <ul className='box-menu-nav'>
                             {
                                 menuItems.map((item, i) => (
-                                    <li key={i} className='item-nav'>
+                                    <li key={i} className={`item-nav ${i === 0 ? 'active' : ''}`}>
                                         <div className='box-item-nav'>
                                             <div className='item-icon'>
-                                                <Icons.ManagerAplus size={24} />
+                                                {item.icon}
                                             </div>
                                             <span className='item-label'>
                                                 {item.label}
