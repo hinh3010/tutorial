@@ -61,6 +61,11 @@ function App() {
                         </ul>
                     </div>
 
+                    {/* banner */}
+                    <div className="banner">
+                        <img src={Images.banner} alt="" className="image" />
+                    </div>
+
                 </div>
 
 
