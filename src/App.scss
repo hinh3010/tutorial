@@ -16,97 +16,10 @@ html {
 .home {
     width: 100%;
     display: flex;
-    height: 5000px;
 
-    .sidebar {
-        background-color: #ffffff;
-        flex: 3;
-        margin-right: 10px;
-        border-radius: 1rem;
-        display: flex;
-        flex-direction: column;
-        padding: 10px 0;
-
-        .logo {
-            margin-top: 10px;
-            background-color: initial;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            img {
-                height: 70px;
-            }
-
-            span {
-                font-size: 4rem;
-                margin-left: 20px;
-                // font-weight: bold;
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                background: linear-gradient(180deg, #FF7A00 0%, #FFB800 100%);
-                background-clip: text;
-                -webkit-background-clip: text;
-                color: transparent;
-            }
-        }
-
-        .menu-nav {
-            .box-menu-nav {
-                margin: 20px 15px;
-                padding: 0;
-                list-style: none;
-
-                .item-nav {
-                    padding: 12px 24px;
-                    border-radius: 8px;
-                    color: #1D4ED8;
-                    margin-bottom: 10px;
-                    cursor: pointer;
-                    transition: scale .5s linear;
-                    background-color: #F0F2F5;
-
-                    &.active {
-                        background: linear-gradient(90deg, #0055FF 2.73%, #0099FF 95.51%);
-                        color: white;
-                    }
-
-                    &:not(&.active):hover {
-                        background: linear-gradient(90deg, #0055FF 2.73%, #0099FF 95.51%);
-                        color: white;
-                        overflow: hidden;
-                        scale: 0.95;
-                        opacity: 0.8;
-                    }
-
-                    .box-item-nav {
-                        display: flex;
-                        align-items: center;
-
-                        .item-icon {
-                            width: 24px;
-                            height: 24px;
-                        }
-
-                        .item-label {
-                            color: inherit;
-                            font-weight: bold;
-                            font-size: 2rem;
-                            margin-left: 15px;
-                        }
-                    }
-                }
-            }
-        }
-
-        .banner {
-            margin: 10px auto;
-        }
-
-    }
 
     .wrapper {
         flex: 9;
-        height: 5000px;
         margin-left: 10px;
 
         display: flex;
